@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
                 python3-dev \
                 python3-pip \
                 wget \
-        && rm -rf /var/lib/apt/lists/*
+        --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # pip3 requirements
 RUN wget https://raw.githubusercontent.com/upenu/website/master/requirements.txt
