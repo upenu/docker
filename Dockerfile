@@ -18,3 +18,5 @@ RUN wget https://raw.githubusercontent.com/upenu/website/master/requirements.txt
 RUN pip3 install -r requirements.txt
 RUN /bin/bash -c 'rm requirements.txt;'
 
+# expose port
+EXPOSE 8000
