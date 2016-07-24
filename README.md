@@ -16,8 +16,6 @@ Dockerized setup and development of upenu/website
 7. Type `\q` to quit the mysql server shell
 
 ### Docker and Django
-1. Let's build the docker image we'll be running the webserver in! Run the command `docker build -t 'https://github.com/upenu/docker.git'`
-    - This gets the `Dockerfile` from this repository and starts building an image for you
 1. On your machine, `git clone` the upenu/website repo and `cd` into it
     - Make sure to `cp upe/settings.py.template upe/settings.py`, or nothing will work!
     - Also, if you are running OSX or Windows, make sure you `git clone` in a subpath of your `/Users` or `C:\Users` directory respectively
