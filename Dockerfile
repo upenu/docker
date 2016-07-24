@@ -2,6 +2,8 @@ FROM debian:jessie
 MAINTAINER Brian Sang
 # install python, git, wget, mysql stuff
 RUN apt-get update && apt-get install -y \
+                gcc \
+                gettext \
                 git \
                 libmysqlclient-dev \
                 mysql-client-5.5 \
