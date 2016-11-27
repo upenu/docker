@@ -1,7 +1,7 @@
-upenu - docker
+upenu - docker (old!)
 ========================
 Dockerized setup and development of upenu/website
-
+We moved everything here to the upenu/website repo directly, so you can look there for specifics on setting up the website dev stack with containers
 
 ## Instructions for Development
 ### Docker and MySQL
