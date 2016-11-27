@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    restart: unless-stopped
+    restart: on-failure
     build: .
     container_name: upe-web
     ports:
@@ -14,12 +14,10 @@ services:
       - database
     command: python3 /opt/website/manage.py runserver 0.0.0.0:8000
   database:
-    restart: unless-stopped
+    restart: on-failure
     image: mysql/mysql-server:5.5
     container_name: upe-mysql
     command: mysqld --user=root --verbose
-    ports:
-      - "3307:3306"
     environment:
       MYSQL_USER: admin
       MYSQL_ROOT_PASSWORD: littlewhale
